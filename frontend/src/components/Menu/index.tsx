@@ -1,4 +1,3 @@
-import GlassIcon from 'assets/img/glass-oculos-preto-peq.png';
 import HomeIcon from 'assets/img/home.png';
 import SpecificationsIcon from 'assets/img/especificacoes.png';
 import PhotosIcon from 'assets/img/fotos.png';
