@@ -48,30 +48,6 @@ article.noticiaPrincipal h2 {
     margin: 10px 0px 10px 0px;
 }
 
-header.cabecalhoArtigo h1 {
-    font-family: 'FontLogo', sans-serif;
-    font-size: 20pt;
-    color: #606060;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-header.cabecalhoArtigo h2 {
-    font-size: 13pt;
-    color: #CECECE;
-    background-color: #FFFFFF;
-    margin: 0px;
-}
-
-header.cabecalhoArtigo h3 {
-    font-size: 12px;
-    color: #606060;
-}
-
-header.cabecalhoArtigo h3.direita {
-    text-align: right;
-}
-
 /* Formatação da Table */
 
 table.tabelaEspecificacoes {

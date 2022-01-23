@@ -1,14 +1,18 @@
-span.bodyIframe {
+div.bodyIframe {
+    background-color: #FFFFFF;
     font-family: Arial, sans-serif;
     font-size: 10pt;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
-span.bodyIframe p {
+div.bodyIframe p {
     text-align: justify;
     text-indent: 20px;
 }
 
-span.bodyIframe article h1 {
+div.bodyIframe article h1 {
     font-size: 15pt;
     color: #FFFFFF;
     background-color: rgba(0, 0, 0, .3);
@@ -16,17 +20,17 @@ span.bodyIframe article h1 {
     margin: 0px;
 }
 
-span.bodyIframe article h2 {
+div.bodyIframe article h2 {
     font-size: 13pt;
     color: #888888;
     margin: 0;
 }
 
-span.bodyIframe article {
+div.bodyIframe article {
     margin-bottom: 800px;
 }
 
-span.bodyIframe img.imagemDireita {
+div.bodyIframe img.imagemDireita {
     display: block;
     float: right;
     margin-left: 5px;

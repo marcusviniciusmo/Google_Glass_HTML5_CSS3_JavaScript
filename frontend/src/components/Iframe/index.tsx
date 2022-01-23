@@ -7,7 +7,7 @@ import './styles.css';
 
 function Iframe() {
     return (
-        <span className="bodyIframe">
+        <div className="bodyIframe">
             <article className="topo">
                 <header>
                     <h2>Clique sobre as áreas destacadas em vermelho</h2>
@@ -67,7 +67,7 @@ function Iframe() {
                     vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.
                 </p>
             </article>
-        </span>
+        </div>
     );
 };
 

@@ -3,6 +3,7 @@ import GlassManWoman from 'assets/img/glass-quadro-homem-mulher.jpg';
 import GlassIcon from 'assets/img/glass-oculos-preto-peq.png';
 import Footer from "components/Footer";
 import './styles.css';
+import ArticleHeader from "components/ArticleHeader";
 
 function Home() {
     return (
@@ -10,14 +11,9 @@ function Home() {
             <Header defaultIconMenu={GlassIcon} />
             <section className="corpo">
                 <article className="noticiaPrincipal">
-                    <header className="cabecalhoArtigo">
-                        <hgroup>
-                            <h3>Tecnologia &gt; Inovações</h3>
-                            <h1>Saiba tudo sobre o Google Glass</h1>
-                            <h2>por Marcus Vinícius</h2>
-                            <h3 className="direita">Atualizado em 23/Janeiro/2022</h3>
-                        </hgroup>
-                    </header>
+                    <ArticleHeader
+                        text="Tecnologia &gt; Inovações"
+                        title={"Saiba tudo sobre o Google Glass"} />
 
                     <h2>O que é</h2>
                     <p>
