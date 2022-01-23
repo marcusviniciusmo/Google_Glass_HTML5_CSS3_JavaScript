@@ -1,6 +1,8 @@
+import Home from "./views/Home";
+
 function App() {
   return (
-    <h1>Página Principal - Google Glass</h1>
+    <Home />
   );
 }
 
