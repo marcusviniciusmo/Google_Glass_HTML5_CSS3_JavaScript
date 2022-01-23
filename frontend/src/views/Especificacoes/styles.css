@@ -5,9 +5,11 @@ section.conteudo {
 
 iframe.frameSpec {
     width: 400px;
-    height: 280px;
+    height: 300px;
     border: none;
     overflow: hidden;
+    display: block;
+    float: right;
 }
 
 iframe.frameSpec::-webkit-scrollbar {

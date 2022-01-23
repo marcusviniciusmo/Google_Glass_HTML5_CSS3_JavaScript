@@ -8,14 +8,14 @@ import './styles.css';
 function Iframe() {
     return (
         <div className="bodyIframe">
-            <article className="topo">
+            <article id="topo">
                 <header>
                     <h2>Clique sobre as áreas destacadas em vermelho</h2>
                 </header>
                 <img src={Mao} alt="Mão apontando para a esquerda" />
             </article>
 
-            <article className="tela">
+            <article id="tela">
                 <header>
                     <h1>Tela</h1>
                     <h2>Como o mundo vai aparecer</h2>
@@ -29,7 +29,7 @@ function Iframe() {
                 <img src={DetalhesTela} alt="Tela do Google Glass" />
             </article>
 
-            <article className="camera">
+            <article id="camera">
                 <header>
                     <h1>Câmera</h1>
                     <h2>Filme e fotografe a qualquer momento</h2>
@@ -42,7 +42,7 @@ function Iframe() {
                 </p>
             </article>
 
-            <article className="sensores">
+            <article id="sensores">
                 <header>
                     <h1>Sensores</h1>
                     <h2>A sensibilidade de um simples óculos</h2>
@@ -55,7 +55,7 @@ function Iframe() {
                 <img src={DetalhesSensores} alt="Sensores do Google Glass" />
             </article>
 
-            <article className="gadgets">
+            <article id="gadgets">
                 <header>
                     <h1>Bateria e Gadgets</h1>
                     <h2>Quais são os dispositivos que complementam o Glass</h2>
@@ -67,6 +67,7 @@ function Iframe() {
                     vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.
                 </p>
             </article>
+            <div className="fundoIframe"></div>
         </div>
     );
 };
