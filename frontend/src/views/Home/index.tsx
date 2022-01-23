@@ -20,7 +20,7 @@ function Home() {
                 Project Glass, o eletrônico é capaz de tirar fotos a partir de comandos de voz, 
                 enviar mensagens instantâneas e realizar vídeocon&shy;ferên&shy;cias. Seu 
                 lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. 
-                Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo 
+                Atualmente o <em>Google Glass</em> encontra-se em fase de testes e já possui um vídeo 
                 totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou 
                 novas patentes anti-furto e de desbloqueio de tela para o acessório.
             </p>
