@@ -1,4 +1,5 @@
 import Menu from "components/Menu";
+import './styles.css';
 
 function Header() {
     return (
