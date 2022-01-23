@@ -1,11 +1,12 @@
 import GlassIcon from 'assets/img/glass-oculos-preto-peq.png';
+import './styles.css';
 
 function Menu() {
     return (
         <>
             <img src={GlassIcon} alt="Óculos do Google Glass" />
 
-            <nav>
+            <nav className="menu">
                 <h1>Menu Principal</h1>
                 <ul>
                     <li><a href="/">Home</a></li>
