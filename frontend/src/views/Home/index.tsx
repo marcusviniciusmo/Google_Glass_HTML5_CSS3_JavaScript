@@ -18,8 +18,8 @@ function Home() {
             <h2>O que é</h2>
             <p>
                 O Google Glass é um acessório em forma de óculos que possibilita a interação
-                dos usuários com diversos conteúdos em realidade aumentada. Também chamado de
-                Project Glass, o eletrônico é capaz de tirar fotos a partir de comandos de voz,
+                dos usuários com diversos conteúdos em realidade aumentada. Também chamado de 
+                <i> Project Glass</i>, o eletrônico é capaz de tirar fotos a partir de comandos de voz,
                 enviar mensagens instantâneas e realizar vídeocon&shy;ferên&shy;cias. Seu
                 lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil.
                 Atualmente o <em>Google Glass</em> encontra-se em fase de testes e já possui um vídeo
