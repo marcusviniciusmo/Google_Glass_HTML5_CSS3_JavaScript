@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+    font-family: 'FontLogo';
+    src: url("assets/fonts/bubblegum-sans-regular.otf");
+}
+
 body {
     background-color: #DDDDDD;
     color: rgba(0, 0, 0, 1);
