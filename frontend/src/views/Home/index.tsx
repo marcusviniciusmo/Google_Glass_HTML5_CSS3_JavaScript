@@ -45,33 +45,29 @@ function Home() {
                 <h1>Especificações Técnicas</h1>
 
                 <table className="tabelaEspecificacoes">
-                    <caption>Tabela Técnica do Google Glass Mar/2013</caption>
+                    <caption>Tabela Técnica do Google Glass <span>Mar/2013</span></caption>
 
                     <tr>
-                        <td>Tela</td>
-                        <td>Resolução equivalente a tela de 25"</td>
+                        <td className="colunaEsquerda">Tela</td>
+                        <td className="colunaDireita">Resolução equivalente a tela de 25"</td>
                     </tr>
                     <tr>
-                        <td rowSpan={2}>Camera</td>
-                        <td>5MP para fotos</td>
+                        <td className="colunaEsquerda" rowSpan={2}>Camera</td>
+                        <td className="colunaDireita">5MP para fotos</td>
                     </tr>
                     <tr>
-                        <td>
-                            720p para vídeos
-                        </td>
+                        <td className="colunaDireita">720p para vídeos</td>
                     </tr>
                     <tr>
-                        <td rowSpan={2}>Conectividade</td>
-                        <td>Wi-Fi</td>
+                        <td className="colunaEsquerda" rowSpan={2}>Conectividade</td>
+                        <td className="colunaDireita">Wi-Fi</td>
                     </tr>
                     <tr>
-                        <td>
-                            Bluetooth
-                        </td>
+                        <td className="colunaDireita">Bluetooth</td>
                     </tr>
                     <tr>
-                        <td>Memória Interna</td>
-                        <td>12GB</td>
+                        <td className="colunaEsquerda">Memória Interna</td>
+                        <td className="colunaDireita">12GB</td>
                     </tr>
                 </table>
 
