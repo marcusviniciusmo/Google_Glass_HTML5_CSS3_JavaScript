@@ -38,6 +38,19 @@ section.corpo {
     padding-right: 20px;
 }
 
+table.tabelaEspecificacoes {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.tabelaEspecificacoes td {
+    border: 1px solid #606060;
+    padding: 10px;
+    vertical-align: top;
+}
+
 /* Formatação do Aside */
 
 aside.lateral {
