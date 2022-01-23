@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color: #DDDDDD;
     color: rgba(0, 0, 0, 1);
 }
@@ -20,4 +21,13 @@ div.interface {
 p {
     text-align: justify;
     text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
