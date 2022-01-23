@@ -1,4 +1,4 @@
-import GlassIcon from 'assets/img/glass-oculos-preto-peq.png';
+import Menu from "components/Menu";
 
 function Header() {
     return (
@@ -8,14 +8,7 @@ function Header() {
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
 
-            <img src={GlassIcon} alt="Óculos do Google Glass" />
-
-            Menu Principal
-            - Home
-            - Especificações
-            - Fotos
-            - Multimídia
-            - Fale conosco
+            <Menu />
         </header>
     );
 };
