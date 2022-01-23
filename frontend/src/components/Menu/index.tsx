@@ -4,7 +4,7 @@ import './styles.css';
 function Menu() {
     return (
         <>
-            <img src={GlassIcon} alt="Óculos do Google Glass" />
+            <img className="icone" src={GlassIcon} alt="Óculos do Google Glass" />
 
             <nav className="menu">
                 <h1>Menu Principal</h1>
