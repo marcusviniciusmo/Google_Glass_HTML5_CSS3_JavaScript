@@ -1,12 +1,13 @@
 import Header from "components/Header";
-import { GetCurrentYear } from 'utils/Functions';
 import GlassManWoman from 'assets/img/glass-quadro-homem-mulher.jpg';
+import GlassIcon from 'assets/img/glass-oculos-preto-peq.png';
+import Footer from "components/Footer";
 import './styles.css';
 
 function Home() {
     return (
         <div className="interface">
-            <Header />
+            <Header defaultIconMenu={GlassIcon} />
             <section className="corpo">
                 <article className="noticiaPrincipal">
                     <header className="cabecalhoArtigo">
@@ -115,19 +116,7 @@ function Home() {
                 </p>
             </aside>
 
-            <footer className="rodape">
-                <p>
-                    Copyright &copy; {GetCurrentYear()} - by Marcus Vinícius <br />
-                    <a href="https://github.com/marcusviniciusmo"
-                        target={'_blank'} rel="noreferrer">Github</a> | &nbsp;
-                    <a href="https://www.linkedin.com/in/marcus-viniciusmo/"
-                        target={'_blank'} rel="noreferrer">Linkedin</a> | &nbsp;
-                    <a href="https://www.facebook.com/marcus.viniciusmo/"
-                        target={'_blank'} rel="noreferrer">Facebook</a> | &nbsp;
-                    <a href="https://www.instagram.com/marcus.viniciusmo"
-                        target={'_blank'} rel="noreferrer">Instagram</a>
-                </p>
-            </footer>
+            <Footer />
         </div >
     );
 };

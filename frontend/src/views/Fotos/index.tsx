@@ -1,17 +1,11 @@
+import Header from "components/Header";
+import PhotosIcon from 'assets/img/fotos.png';
+import Footer from "components/Footer";
+
 function Fotos() {
     return (
-        <>
-            Google Glass
-            A revolução do Google está chegando
-
-            [AQUI ENTRA UMA FOTO]
-
-            Menu Principal
-            - Home
-            - Especificações
-            - Fotos
-            - Multimídia
-            - Fale conosco
+        <div className="interface">
+            <Header defaultIconMenu={PhotosIcon} />
 
             Glass &gt; Fotos
             Galeria de Imagens do Google Glass
@@ -27,10 +21,8 @@ function Fotos() {
             - Vários tipos de lente
             - Informações importantes
 
-            Copyright 2013 - by Gustavo Guanabara
-
-            Facebook | Twitter
-        </>
+            <Footer />
+        </div>
     );
 };
 

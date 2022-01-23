@@ -1,0 +1,9 @@
+footer.rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer.rodape p {
+    text-indent: 0px;
+    text-align: center;
+}

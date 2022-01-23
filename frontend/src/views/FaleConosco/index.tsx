@@ -1,17 +1,11 @@
+import Header from "components/Header";
+import ContactIcon from 'assets/img/contato.png';
+import Footer from "components/Footer";
+
 function FaleConosco() {
     return (
-        <>
-            Google Glass
-            A revolução do Google está chegando
-
-            [AQUI ENTRA UMA FOTO]
-
-            Menu Principal
-            - Home
-            - Especificações
-            - Fotos
-            - Multimídia
-            - Fale conosco
+        <div className="interface">
+            <Header defaultIconMenu={ContactIcon} />
 
             Fale Conosco &gt; Contato
             Formulário de Contato
@@ -46,9 +40,8 @@ function FaleConosco() {
 
             [BOTÃO ENVIAR]
 
-            Copyright 2013 - by Gustavo Guanabara
-            Facebook | Twitter
-        </>
+            <Footer />
+        </div>
     );
 };
 

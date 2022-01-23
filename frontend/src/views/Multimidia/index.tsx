@@ -1,17 +1,11 @@
+import Header from "components/Header";
+import MultimidiaIcon from 'assets/img/multimidia.png';
+import Footer from "components/Footer";
+
 function Multimidia() {
     return (
-        <>
-            Google Glass
-            A revolução do Google está chegando
-
-            [AQUI ENTRA UMA FOTO]
-
-            Menu Principal
-            - Home
-            - Especificações
-            - Fotos
-            - Multimídia
-            - Fale conosco
+        <div className="interface">
+            <Header defaultIconMenu={MultimidiaIcon} />
 
             Glass &gt; Multimídia
             Sons e Vídeos
@@ -24,9 +18,8 @@ function Multimidia() {
             [AQUI ENTRA UM VÍDEO]
             [AQUI ENTRA UM ÁUDIO]
 
-            Copyright 2013 - by Gustavo Guanabara
-            Facebook | Twitter
-        </>
+            <Footer />
+        </div>
     );
 };
 

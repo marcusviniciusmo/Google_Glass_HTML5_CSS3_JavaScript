@@ -1,17 +1,11 @@
+import Header from "components/Header";
+import SpecificationsIcon from 'assets/img/especificacoes.png';
+import Footer from "components/Footer";
+
 function Especificacoes() {
     return (
-        <>
-            Google Glass
-            A revolução do Google está chegando
-
-            [AQUI ENTRA UMA FOTO]
-
-            Menu Principal
-            - Home
-            - Especificações
-            - Fotos
-            - Multimídia
-            - Fale conosco
+        <div className="interface">
+            <Header defaultIconMenu={SpecificationsIcon} />
 
             Glass &gt; Especificações
             Raio-X no Google Glass
@@ -22,9 +16,8 @@ function Especificacoes() {
 
             [AQUI ENTRA UMA IMAGEM]
 
-            Copyright 2013 - by Gustavo Guanabara
-            Facebook | Twitter
-        </>
+            <Footer />
+        </div>
     );
 };
 

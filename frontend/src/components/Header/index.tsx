@@ -1,7 +1,11 @@
 import Menu from "components/Menu";
 import './styles.css';
 
-function Header() {
+type Props = {
+    defaultIconMenu: string;
+}
+
+function Header({ defaultIconMenu }: Props) {
     return (
         <header className="cabecalho">
             <hgroup>
@@ -9,7 +13,7 @@ function Header() {
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
 
-            <Menu />
+            <Menu defaultIcon={defaultIconMenu} />
         </header>
     );
 };
