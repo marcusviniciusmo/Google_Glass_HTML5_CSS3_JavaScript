@@ -1,6 +1,7 @@
 import Header from "components/Header";
 import { GetCurrentYear } from 'utils/Functions';
 import GlassManWoman from 'assets/img/glass-quadro-homem-mulher.jpg';
+import './styles.css';
 
 function Home() {
     return (
@@ -26,7 +27,7 @@ function Home() {
                 novas patentes anti-furto e de desbloqueio de tela para o acessório.
             </p>
 
-            <figure>
+            <figure className="fotoLegenda">
                 <img src={GlassManWoman} alt="Google Glass-homem-mulher" />
                 <figcaption>
                     <h3>Google Glass</h3>
