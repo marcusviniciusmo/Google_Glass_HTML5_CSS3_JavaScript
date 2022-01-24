@@ -1,9 +1,11 @@
 import Header from "components/Header";
-import GlassManWoman from 'assets/img/glass-quadro-homem-mulher.jpg';
 import GlassIcon from 'assets/img/glass-oculos-preto-peq.png';
+import ArticleHeader from "components/ArticleHeader";
+import GlassManWoman from 'assets/img/glass-quadro-homem-mulher.jpg';
+import Poster01 from 'assets/img/video-mini01.jpg';
+import Poster02 from 'assets/img/video-mini02.jpg';
 import Footer from "components/Footer";
 import './styles.css';
-import ArticleHeader from "components/ArticleHeader";
 
 function Home() {
     return (
@@ -86,7 +88,10 @@ function Home() {
                         que você marque encontros apenas com comandos de voz.
                     </p>
 
-                    [AQUI ENTRA UM VÍDEO]
+                    <div className="video01">
+                        <video id="filme01" poster={Poster01}
+                            src={require("assets/media/one-day.mp4")} controls />
+                    </div>
                 </article>
             </section>
 
@@ -94,7 +99,10 @@ function Home() {
                 <h1>Outras Notícias</h1>
                 <h2>Vídeo mais recente</h2>
 
-                [AQUI ENTRA UM VÍDEO]
+                <div className="video02">
+                    <video id="filme02" poster={Poster02}
+                        src={require("assets/media/how-it-feels.mp4")} controls />
+                </div>
 
                 <h2>Novidades no Glass</h2>
                 <p>
