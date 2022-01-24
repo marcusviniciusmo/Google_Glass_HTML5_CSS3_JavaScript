@@ -3,6 +3,7 @@ import MultimidiaIcon from 'assets/img/multimidia.png';
 import ArticleHeader from "components/ArticleHeader";
 import Poster from 'assets/img/video-mini03.jpg';
 import Footer from "components/Footer";
+import './styles.css';
 
 function Multimidia() {
     return (

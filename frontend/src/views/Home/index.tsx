@@ -88,7 +88,7 @@ function Home() {
                         que você marque encontros apenas com comandos de voz.
                     </p>
 
-                    <div className="video01">
+                    <div>
                         <video id="filme01" poster={Poster01}
                             src={require("assets/media/one-day.mp4")} controls />
                     </div>
@@ -99,7 +99,7 @@ function Home() {
                 <h1>Outras Notícias</h1>
                 <h2>Vídeo mais recente</h2>
 
-                <div className="video02">
+                <div>
                     <video id="filme02" poster={Poster02}
                         src={require("assets/media/how-it-feels.mp4")} controls />
                 </div>

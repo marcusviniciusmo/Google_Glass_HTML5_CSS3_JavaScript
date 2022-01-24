@@ -89,6 +89,17 @@ table.tabelaEspecificacoes caption span {
     margin-top: 10px;
 }
 
+/* Formatação do Vídeo 01 */
+
+video#filme01 {
+    display: block;
+    position: relative;
+    width: 580px;
+    margin: auto;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
 /* Formatação do Aside */
 
 aside.lateral {
@@ -113,4 +124,16 @@ aside.lateral h2 {
     font-size: 13pt;
     color: #FFFFFF;
     padding: 5px;
+}
+
+/* Formatação do Vídeo 02 */
+
+video#filme02 {
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 400px;
+    height: 250px;
+    margin: auto;
+    cursor: pointer;
 }
