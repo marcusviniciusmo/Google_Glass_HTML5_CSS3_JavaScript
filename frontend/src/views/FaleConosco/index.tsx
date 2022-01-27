@@ -1,9 +1,61 @@
+import { useEffect, useState } from "react";
+import { Regioes, Estados, Municipios } from "utils/Types";
+import axios from "utils/Axios";
+import { Toast } from "utils/Alert";
 import Header from "components/Header";
 import ContactIcon from 'assets/img/contato.png';
-import Footer from "components/Footer";
 import ArticleHeader from "components/ArticleHeader";
+import { BeatLoader } from 'react-spinners';
+import Footer from "components/Footer";
 
 function FaleConosco() {
+
+    const [isLoading, setIsLoading] = useState(false);
+    const [regioes, setRegioes] = useState<Regioes>();
+    const [estados, setEstados] = useState<Estados>();
+    const [municipios, setMunicipios] = useState<Municipios>();
+
+    const handleMunicipios = async (event: any) => {
+        setIsLoading(true);
+        await axios.get(`api/v1/localidades/estados/${event.target.value}/municipios?orderBy=nome`)
+            .then(response => {
+                setMunicipios(response.data);
+                setIsLoading(false);
+            })
+            .catch(() => {
+                Toast.fire({
+                    icon: 'error',
+                    title: 'An error occurred!'
+                });
+            });
+    };
+
+    useEffect(() => {
+        axios.get(`api/v1/localidades/regioes?orderBy=nome`)
+            .then(response => {
+                setRegioes(response.data);
+            })
+            .catch(() => {
+                Toast.fire({
+                    icon: 'error',
+                    title: 'An error occurred!'
+                });
+            });
+    }, []);
+
+    useEffect(() => {
+        axios.get(`https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome`)
+            .then(response => {
+                setEstados(response.data);
+            })
+            .catch(() => {
+                Toast.fire({
+                    icon: 'error',
+                    title: 'An error occurred!'
+                });
+            });
+    }, []);
+
     return (
         <div className="interface">
             <Header defaultIconMenu={ContactIcon} />
@@ -12,7 +64,7 @@ function FaleConosco() {
                 text="Fale Conosco &gt; Contato"
                 title={"Formulário de Contato"} />
 
-            <form>
+            <form method="post" id="fContato" action="mailto:marcus.viniciusmo@hotmail.com">
                 <fieldset id="usuario">
                     <legend>Identificação do Usuário</legend>
                     <p>
@@ -61,39 +113,86 @@ function FaleConosco() {
                         <label htmlFor="cRua">
                             Logradouro:
                             <input type="text" name="tRua" id="cRua" size={13}
-                            maxLength={80} placeholder="Rua, Avenia, Travessa..." />
+                                maxLength={80} placeholder="Rua, Avenia, Travessa..." />
                         </label>
                     </p>
                     <p>
-                        <label>
+                        <label htmlFor="cNum">
                             Número:
                             <input type="number" name="tNum" id="cNum" min={0} max={99999} />
                         </label>
                     </p>
                     <p>
-                        <label>
+                        <label htmlFor="cEst">
                             Estado:
                         </label>
+                        <select name="tEst" id="cEst" onClick={handleMunicipios}>
+                            {regioes &&
+                                regioes.map((r) => {
+                                    return (
+                                        <optgroup label={`${r.nome}`}>
+                                            {estados &&
+                                                estados.filter(e => e.regiao.nome === r.nome).map((estado) => {
+                                                    return (
+                                                        <option value={estado.sigla}>{estado.nome}</option>
+                                                    )
+                                                })
+                                            }
+                                        </optgroup>
+                                    )
+                                })
+                            }
+                        </select>
                     </p>
                     <p>
-                        <label>
+                        <label htmlFor="cCid">
                             Cidade:
                         </label>
+                        {!isLoading ?
+                            <select name="tCid" id="cCid">
+                                {municipios &&
+                                    municipios.map((m) => {
+                                        return (
+                                            <option value={m.nome}>{m.nome}</option>
+                                        )
+                                    })
+                                }
+                            </select> : <BeatLoader size={10} margin={2} color="#606060" />}
                     </p>
                 </fieldset>
 
                 <fieldset id="mensagem">
                     <legend>Mensagem do Usuário</legend>
-                    Grau de Urgência:
-                    Mensagem:
+                    <p>
+                        <label htmlFor="cUrg">
+                            Grau de Urgência:
+                        </label>
+                        Min<input type="range" name="tUrg" id="cUrg" min={0} max={10} 
+                            step={1} defaultValue={0}/>Máx
+                    </p>
+                    <p>
+                        <label htmlFor="cMsg">
+                            Mensagem:
+                        </label>
+                        <textarea name="tMsg" id="cMsg" cols={45} rows={5}
+                            placeholder="Deixe aqui sua mensagem"></textarea>
+                    </p>
                 </fieldset>
 
                 <fieldset id="pedido">
                     <legend>Quero um Google Glass</legend>
-                    Gostaria de adquirir um Google Glass quando disponível
-                    Cor:
-                    Quantidade:
-                    Preço Total: R$
+                    <label htmlFor="cPed">
+                        Gostaria de adquirir um Google Glass quando disponível
+                    </label>
+                    <label htmlFor="cCor">
+                        Cor:
+                    </label>
+                    <label htmlFor="cQtd">
+                        Quantidade:
+                    </label>
+                    <label htmlFor="cTot">
+                        Preço Total: R$
+                    </label>
                 </fieldset>
 
                 [BOTÃO ENVIAR]
