@@ -1,0 +1,72 @@
+form {
+    width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+input:hover, textarea:hover, fieldset#sexo label:hover, select:hover {
+    background-color: #DDDDDD;
+}
+
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color: #CECECE;
+    margin: 20px
+}
+
+fieldset#sexo {
+    width: 150px;
+    margin-left: 50px;
+}
+
+fieldset#usuario {
+    background: url('../../assets/img/icone-contato.png') no-repeat 95% 95%;
+}
+
+fieldset#endereco {
+    background: url('../../assets/img/icone-endereco.png') no-repeat 95% 95%;
+}
+
+fieldset#mensagem {
+    background: url('../../assets/img/icone-mensagem.png') no-repeat 95% 95%;
+}
+
+fieldset#pedido {
+    background: url('../../assets/img/icone-pagamento.png') no-repeat 95% 95%;
+}
+
+span.vermelho {
+    color: #FF0000;
+}
+
+form p#check {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+form label {
+    margin-right: 5px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+input#botaoEnviar {
+    display: block;
+    float: right;
+    margin-right: 15px;
+}
+
+input#botaoEnviar:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
