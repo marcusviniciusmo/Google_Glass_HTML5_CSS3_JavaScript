@@ -4,10 +4,10 @@ type Props = {
     text: string;
 };
 
-function Breadcrumb({ text }: Props) {
+function BreadCrumb({ text }: Props) {
     return (
         <h3>{text}</h3>
     );
 };
 
-export default Breadcrumb;
+export default BreadCrumb;
