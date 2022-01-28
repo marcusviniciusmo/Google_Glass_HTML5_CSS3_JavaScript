@@ -32,7 +32,7 @@ figure.fotoLegenda:hover figcaption {
 
 section.corpo {
     display: block;
-    width: 650px;
+    width: 600px;
     float: left;
     border-right: 1px solid #606060;
     padding-right: 20px;
@@ -40,7 +40,7 @@ section.corpo {
 
 /* Formatação do Article */
 
-article.noticiaPrincipal h2 {
+article.noticiaPrincipal span h2 {
     font-size: 13pt;
     color: #606060;
     background-color: #DDDDDD;
@@ -105,7 +105,7 @@ video#filme01 {
 aside.lateral {
     background-color: #DDDDDD;
     display: block;
-    width: 500px;
+    width: 440px;
     float: right;
     padding: 10px;
     margin-top: 10px;
